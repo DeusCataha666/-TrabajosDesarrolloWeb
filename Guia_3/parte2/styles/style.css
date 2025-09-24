@@ -1,0 +1,66 @@
+:root {
+    --primary-color: #710000;
+    --secondary-color: #000000;
+    --font-family-title: 'monospace';
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+template {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+div.app-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    width: 320px;
+    height: max-content;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(165deg, #9eb4d6, #010a19);
+}
+
+div.app-card:hover {
+    transform: translateY(-2px) scale(1.02);
+    transition: transform 0.8s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2.title {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+    font-family: monospace;
+
+}
+
+img.img {
+    max-width: 300px;
+    max-height: max-content;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+p.desc {
+    font-size: 1em;
+    color: var(--secondary-color);
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+}
+
+h6.price {
+    font-size: 1.2em;
+    color: var(--primary-color);
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 8px;
+}
