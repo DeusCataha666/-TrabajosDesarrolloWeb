@@ -1,0 +1,9 @@
+:root {
+    --color-primary: red;
+    --font-weight-bold: bold;
+}
+
+span {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
+}
